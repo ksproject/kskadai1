@@ -8,13 +8,13 @@ abstract class BaseClass {
 	 * 変数宣言
 	 * 表示するデータ
 	 */
-	$outputData;
+	private $outputData;
 
 	/**
 	 * コンストラクタの設定
 	 */
-	public function const( $data ) {
-		$this -> $outputData = $data;
+	public function __const( $data ) {
+		$this->outputData = $data;
 
 	}
 
@@ -33,7 +33,7 @@ abstract class BaseClass {
 	 * ゲッター
 	 */
 	public function getData() {
-		return $this -> $outputData;
+		return $this->outputData;
 	}
 
 	/**
