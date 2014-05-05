@@ -7,7 +7,7 @@ require_once 'Order.php';
  * Orderオブジェクトを取得して、商品情報を表示する。
  */
 class OrderDao {
-	public static function createOrder( Order $Order ) {
+	public static function createOrder( Order $order ) {
 		echo '以下の内容で注文データを作成しました';
 
 		echo '<table border="1">';
@@ -19,7 +19,7 @@ class OrderDao {
 		echo '<th>金額</th>';
 		echo '</tr>';
 
-		foreach ( $order->getItems() as $order_item ) {
+		foreach( $order->getItems() as $order_item ) {
 			echo '<tr>';
 			echo '<td>' . $order_item->getItem()->getId() . '</td>';
 			echo '<td>' . $order_item->getItem()->getName() . '</td>';
