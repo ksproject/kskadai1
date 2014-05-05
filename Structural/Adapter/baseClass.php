@@ -5,7 +5,7 @@ require_once 'displayInterface.php';
 /**
  * 指定されたファイルの内容を表示するクラス。
  */
-class OpenFile {
+class OpenFile implements displayInterface {
 	/**
 	 * 内容を表示するファイル名
 	 */
