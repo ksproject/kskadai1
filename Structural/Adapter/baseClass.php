@@ -1,4 +1,7 @@
 <?php
+//ファイルのインポート
+require_once 'displayInterface.php';
+
 /**
  * 指定されたファイルの内容を表示するクラス。
  */
@@ -37,6 +40,14 @@ class OpenFile {
 	 * ファイルの中身を再度表示
 	 */
 	public function reOpenFile() {
+		highlight_file( $this->fileName );
+	}
+
+	/**
+	 * ファイルの中身を再度表示
+	 * displayInterfaceのインターフェース実装
+	 */
+	public function display() {
 		highlight_file( $this->fileName );
 	}
 }

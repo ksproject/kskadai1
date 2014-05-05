@@ -21,4 +21,6 @@ try {
 $show_file->showPlain();
 echo '<hr>';//区切り
 $show_file->reOpenFile();
+echo '<hr>';//区切り
+$show_file->display();
 ?>
