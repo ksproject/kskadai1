@@ -1,0 +1,4 @@
+Behavioral,TemplateMethod
+Creational,Singleton
+Creational,FactoryMethod
+Structural,Adapter
