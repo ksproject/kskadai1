@@ -1,6 +1,6 @@
 <?php
 //別ファイルのインポート
-require_once 'Reader.class.php';
+require_once 'readInterface.php';
 
 /**
  * CSVファイル読み込み用クラス
