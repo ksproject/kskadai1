@@ -19,7 +19,7 @@ class OpenFile {
 		if( !is_readable( $fileName ) ) {
 			throw new Exception( 'file "' . $fileName . '" is not readable!' );
 		}
-		$this->fileName = $fileName
+		$this->fileName = $fileName;
 	}
 
 	/**
