@@ -8,7 +8,8 @@ require_once 'baseClass.php';
  * 表示するファイルはbaseClass.phpとする
  */
 try {
-	$show_file = new OpenFile( './baseClass.php' );
+	$fileName = './baseClass.php';
+	$show_file = new OpenFile( $fileName );
 } catch ( Exception $err ) {
 	//dieはexit()と同じ。現在のスクリプトを終了。
 	die($err->getMessage());

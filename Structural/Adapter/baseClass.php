@@ -14,7 +14,7 @@ class OpenFile implements displayInterface {
 	/**
 	 * コンストラクタ
 	 */
-	public function __const( $fileName ) {
+	public function OpenFile( $fileName ) {
 		//ファイルが存在していないか、読み取ることが不可能な場合Exceptionを投げる
 		if( !is_readable( $fileName ) ) {
 			throw new Exception( 'file "' . $fileName . '" is not readable!' );
