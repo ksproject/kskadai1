@@ -1,11 +1,12 @@
 <?php
-require_once'readInterface.php';
+//別ファイルのインポート
+require_once 'readInterface.php';
 
 /**
  * XMLファイル読み込み用クラス
  * インターフェースの読み込みあり
  */
-class XmlFileReader implements Reader　{
+class XmlFileReader implements Reader {
     //内容表示するファイル名
     private $fileName;
 
@@ -55,5 +56,5 @@ class XmlFileReader implements Reader　{
             echo '</ul>';
         }
     }
-
+}
 ?>
